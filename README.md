@@ -1,4 +1,4 @@
-# Crypto_price_fetcher
+# Crypto coins price fetcher
 
 ## Setup
 Clone the repo `git clone https://github.com/sai1274/Crypto_price_fetcher.git`
