@@ -1,0 +1,46 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/* Additional styling for the container */
+.container {
+    text-align: center; /* Center the content horizontally */
+}
+
+/* Style for the h1 element */
+h1 {
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+/* Style for the form */
+form {
+    margin-top: 20px; /* Add spacing between the h1 and form */
+}
+
+.new{
+    display: block;
+    text-align: center;
+}
+
+.categories{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+.nav{
+    margin-top: 20px;
+}
+
+.box{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+a{
+    padding-left: 10px;
+}
+

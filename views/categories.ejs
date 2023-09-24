@@ -1,0 +1,16 @@
+<%-include("header.ejs")%>
+<div class="new">
+    <h1>All the crypto coins with there category</h1>
+    <div class="categories">
+        <%if(locals.content){%>
+        <% for(var idx=0;idx<content.length;idx++){ %>
+            <div class="box">
+                <p>category id : <%=content[idx]["category_id"] %></p>
+                <p>name : <%=content[idx]["name"]  %></p>
+            </div>
+        <% }} %>
+    </div>
+</div>
+</main>
+</body>
+</html>

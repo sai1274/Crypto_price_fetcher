@@ -1,0 +1,35 @@
+<%-include("header.ejs") %>
+    <div class="main">
+    <div class="container">
+        <h1>Get the price of the crypto coin 😉</h1>
+        <form action="/" method="POST">
+            <select name="ids">
+                <option value=<%=coins_list[0]["id"]%> data-display="select"><%=coins_list[0]["name"]%></option>
+                <% for(var idx=1;idx<coins_list.length;idx++){ %>
+                    <option value=<%=coins_list[idx]["id"]%>><%=coins_list[idx]["name"]%></option>
+                <% } %>
+            </select>
+            <select name="vs_currencies">
+                <option value=<%=vs_currencies[0]%> data-display="select"><%=vs_currencies[0]%></option>
+                <% for(var idx=1;idx<vs_currencies.length;idx++){ %>
+                    <option value=<%=vs_currencies[idx]%>><%=vs_currencies[idx]%></option>
+                <% } %>
+            </select>
+            <button type="submit" class="form-submit">Grab the details</button>
+        </form>
+        <% if (locals.img_loc) { %>
+            <img src=<%=img_loc %>>
+        <% } %>
+        <% if(locals.price){ %>
+            <p>Price is <%=price%> <%=exchange%></p>
+        <% } %>
+        <br>
+        <% if (locals.additional) { %>
+        <p><%=additional %></p>
+        <% } %>
+
+    </div>
+</div>
+</main>    
+</body>
+</html>
